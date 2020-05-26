@@ -9,24 +9,32 @@ body {
 }
 main {
 	text-align: center;
-	color: white;
 	height: 100vh;
 	margin: 0px;
 }
 
-/* ------ seciton .btn-primary ------ */
-section {
+/* ------ Setting main at the center ----- */
 
-	display: flex;
+main {
+	display:flex;
+	flex-flow: column;
 	justify-content: center;
+}
+
+/* ------ section .btn-primary ------ */
+section {
+	align-self: center;
 }
 .btn-primary {
 	margin: 1px solid grey;
 	background-color: darkblue;
 	color: white;
-	width: 9%;
 	text-align: center;
+	transition: all 1s;
 }
+.btn-primary:hover {
+		transform : scale(1.1) ;
+	}
 a, a:active {
 	text-decoration: none;
 	color: white;

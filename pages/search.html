@@ -4,13 +4,14 @@
 	<title>
 		Search - Supermarket GPS
 	</title>
+	<link rel="stylesheet" type="text/css" href="../styles/style-search.css">
 </head>
 <body>
 	<form class="which-shop">
-		Which shop would you like to go ? <input type="text" name="choice" placeholder="Carrefour"> <br>
-		 
 		<div>
-			Country :
+			<h2>
+				Pays :
+			</h2>
 			<select id="country" name="country">
 		       <option value="Afganistan">Afghanistan</option>
 		       <option value="Albania">Albania</option>
@@ -258,10 +259,42 @@
 		       <option value="Zaire">Zaire</option>
 		       <option value="Zambia">Zambia</option>
 		       <option value="Zimbabwe">Zimbabwe</option>
-    </select>
+   			</select>
 		</div>
-		Postal Code : <input type="text" name="postal-code" placeholder="1300"> <br>
+		
+		<h2>
+			 Code Postal:
+		</h2>
 
+		<input type="text" name="postal-code" placeholder="1300"> 
+
+		<div class="buffer"></div>
+
+		<!-- Set a map where supermarkets are displayed on Maps IPA when pushed on search -->
+
+		<a class="btn btn-primary" href="#">
+			Cherchons !
+		</a>
+
+		<!-- <div>
+			<h2>
+				Which shop would you like to go ?
+			</h2> 
+			<select class="selected-country">
+				<option>
+					Delhaize
+				</option>
+				<option>Carrefour</option>
+				<option>Colruyt</option>
+				<option>Aldi</option>
+				<option>Lidl</option>
+				<option>Intermarche</option>
+				<option>Spar</option>
+				<option>Déli Traiteur</option>
+				<option>Färm</option>
+			</select>
+		</div>
+		 -->
 	</form>
 </body>
 </html>
